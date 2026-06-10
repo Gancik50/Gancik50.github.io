@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gancik — Info</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="noise"></div>
+  <canvas id="particles"></canvas>
+  <div class="gradient-orb"></div>
+  <div class="gradient-orb orb-2"></div>
+  <div class="gradient-orb orb-3"></div>
+
+  <div class="scroll-progress"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">Gancik</span>
+      <div class="nav-links">
+        <a href="#about" class="nav-link">Обо мне</a>
+        <a href="#skills" class="nav-link">Скиллы</a>
+        <a href="#projects" class="nav-link">Проекты</a>
+        <a href="#contact" class="nav-link">Контакты</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-badge" data-reveal>
+        <span class="badge-dot"></span>
+        Alive
+      </div>
+
+      <div class="hero-title" data-reveal>
+        <span class="hero-greeting">Привет, я</span>
+        <h1 class="hero-name">Gancik</h1>
+      </div>
+
+      <div class="hero-subtitle-wrap" data-reveal>
+        <span class="hero-subtitle-static"></span>
+        <span class="hero-subtitle" id="typed"></span>
+        <span class="hero-cursor">|</span>
+      </div>
+
+      <p class="hero-desc" data-reveal>Упал - вставай, встал - упай, упай - чокопай, не суди не гуди, не будай вада буди, дабуди дабудай</p>
+
+      <div class="hero-actions" data-reveal>
+        <a href="#projects" class="btn btn-projects">
+          <span>Проекты</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <span>Связаться</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </a>
+        <a href="https://t.me/gancik_1" target="_blank" rel="noopener" class="btn btn-order">
+          <span>Заказать сайт</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-scroll" data-reveal>
+        <svg width="20" height="28" viewBox="0 0 20 28" fill="none">
+          <rect x="1" y="1" width="18" height="26" rx="9" stroke="currentColor" stroke-width="2"/>
+          <circle cx="10" cy="8" r="2.5" fill="currentColor" class="scroll-dot"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-header" data-reveal>
+        <span class="section-number">01</span>
+        <h2 class="section-title">Обо мне</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text" data-reveal>
+          <p><strong>Вайб-кодер</strong> — это специалист, который использует нейросети (LLM) для генерации кода, описывая свои идеи на обычном разговорном языке вместо того, чтобы писать его вручную.</p>
+          <p>Я именно такой. ChatGPT, Gemini, Claude, Copilot — мои рабочие инструменты. Я формулирую задачу словами, а нейросеть помогает превратить её в работающий код. Это не про лень — это про скорость и эффективность.</p>
+          <div class="about-energy">
+            <div class="energy-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span>LLM-драйв</span>
+            </div>
+            <div class="energy-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              <span>Full-stack</span>
+            </div>
+            <div class="energy-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <span>С душой</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-decoration">
+        <div class="about-marquee">
+          <span>vibe coding · vibe coding · vibe coding · </span>
+          <span>vibe coding · vibe coding · vibe coding · </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="section-header" data-reveal>
+        <span class="section-number">02</span>
+        <h2 class="section-title">Скиллы</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-cat" data-reveal style="--accent-cat: #6366f1;">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Python</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Скрипты</span>
+            <span class="skill-tag">Автоматизация</span>
+            <span class="skill-tag">Backend</span>
+            <span class="skill-tag">API</span>
+            <span class="skill-tag">Data</span>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="--w: 90%;"></div></div>
+        </div>
+        <div class="skill-cat" data-reveal style="--accent-cat: #f97316;">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Blender</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">3D-моделинг</span>
+            <span class="skill-tag">Текстуры</span>
+            <span class="skill-tag">Рендер</span>
+            <span class="skill-tag">Анимация</span>
+            <span class="skill-tag">Geometry Nodes</span>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="--w: 75%;"></div></div>
+        </div>
+        <div class="skill-cat" data-reveal style="--accent-cat: #ec4899;">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Figma</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">UI/UX</span>
+            <span class="skill-tag">Прототипы</span>
+            <span class="skill-tag">Компоненты</span>
+            <span class="skill-tag">Auto Layout</span>
+            <span class="skill-tag">Дизайн-системы</span>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="--w: 82%;"></div></div>
+        </div>
+        <div class="skill-cat" data-reveal style="--accent-cat: #22c55e;">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5-4 8-10 8S2 17 2 12 7 2 12 2z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Нейросети</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">ChatGPT</span>
+            <span class="skill-tag">Claude</span>
+            <span class="skill-tag">Gemini</span>
+            <span class="skill-tag">Copilot</span>
+            <span class="skill-tag">Prompt</span>
+            <span class="skill-tag">LLM-интеграция</span>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="--w: 95%;"></div></div>
+        </div>
+        <div class="skill-cat" data-reveal style="--accent-cat: #14b8a6;">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Сайты</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Адаптив</span>
+            <span class="skill-tag">Анимации</span>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="--w: 70%;"></div></div>
+        </div>
+        <div class="skill-cat" data-reveal style="--accent-cat: #1793d1;">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <h3>OS</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Archlinux</span>
+            <span class="skill-tag">CachyOS</span>
+            <span class="skill-tag">Windows</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="section-header" data-reveal>
+        <span class="section-number">03</span>
+        <h2 class="section-title">Проекты</h2>
+      </div>
+      <p class="projects-subtitle" data-reveal>Всё в процессе создания</p>
+      <div class="projects-grid" data-reveal>
+        <div class="project-card project-card-main">
+          <div class="project-card-glow"></div>
+          <div class="project-status">
+            <span class="status-dot"></span>
+            <span>Работает</span>
+          </div>
+          <h3 class="project-card-title">Gancik Site</h3>
+          <p class="project-card-desc">Персональный сайт-визитка с анимациями, частицами и вайбовым дизайном</p>
+          <div class="project-card-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JS</span>
+          </div>
+        </div>
+        <div class="project-card project-card-soon">
+          <div class="project-card-glow"></div>
+          <div class="project-soon-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="project-card-title">Скоро</h3>
+          <p class="project-card-desc">Новые проекты уже в разработке. Следи за обновлениями.</p>
+          <div class="project-card-tags">
+            <span class="project-tag">TBA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-header" data-reveal>
+        <span class="section-number">04</span>
+        <h2 class="section-title">Контакты</h2>
+      </div>
+      <div class="contact-content" data-reveal>
+        <div class="contact-glow"></div>
+        <p class="contact-text">Есть идея?</p>
+        <p class="contact-subtext">Давай воплотим её в жизнь</p>
+        <div class="contact-links">
+          <a href="https://t.me/gancik_1" target="_blank" rel="noopener" class="contact-link" aria-label="Telegram">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.5 2.5L2.5 10.5L9.5 13.5L12.5 20.5L21.5 2.5Z"/><path d="M9.5 13.5L16.5 7.5"/>
+            </svg>
+            <span>Telegram</span>
+          </a>
+          <a href="https://github.com/Gancik50" target="_blank" rel="noopener" class="contact-link" aria-label="GitHub">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1.01.07 1.54 1.03 1.54 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12c0-5.523-4.477-10-10-10z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a href="mailto:limanadeklimon@gmail.com" class="contact-link" aria-label="Email">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/>
+            </svg>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© 2026 Gancik. Сделано с AI.</p>
+      <div class="footer-tag">
+        <span class="footer-dot"></span>
+        prompt > code
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    :root {
+      --bg: #07070d;
+      --surface: #0f0f18;
+      --surface-hover: #181825;
+      --border: #1c1c2e;
+      --text: #e2e2e8;
+      --text-muted: #6b6b80;
+      --accent: #6366f1;
+      --accent-soft: rgba(99, 102, 241, 0.08);
+      --radius: 12px;
+      --radius-lg: 20px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    ::selection { background: rgba(99, 102, 241, 0.3); color: #fff; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+    a { color: inherit; text-decoration: none; }
+
+    .noise {
+      position: fixed; inset: 0; z-index: -1; opacity: 0.015;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-repeat: repeat; background-size: 256px 256px; pointer-events: none;
+    }
+
+    #particles {
+      position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    }
+
+    .gradient-orb {
+      position: fixed; width: 600px; height: 600px; border-radius: 50%;
+      top: -200px; right: -200px; z-index: -2; pointer-events: none;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.06) 0%, transparent 70%);
+      animation: orbFloat 20s ease-in-out infinite;
+    }
+
+    .orb-2 {
+      top: auto; right: auto; bottom: -200px; left: -200px;
+      background: radial-gradient(circle, rgba(236, 72, 153, 0.05) 0%, transparent 70%);
+      animation-delay: -10s;
+    }
+
+    .orb-3 {
+      top: 50%; right: auto; left: 50%;
+      background: radial-gradient(circle, rgba(34, 197, 94, 0.04) 0%, transparent 70%);
+      animation-delay: -5s;
+      width: 400px; height: 400px;
+    }
+
+    @keyframes orbFloat {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(60px, -40px) scale(1.05); }
+      66% { transform: translate(-30px, 50px) scale(0.95); }
+    }
+
+    .scroll-progress {
+      position: fixed; top: 0; left: 0; width: 0; height: 2px;
+      background: linear-gradient(90deg, var(--accent), #ec4899, var(--accent));
+      background-size: 200% 100%;
+      animation: shimmer 3s linear infinite;
+      z-index: 200; transition: width 0.1s linear;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    [data-reveal] {
+      opacity: 0; transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    [data-reveal].revealed { opacity: 1; transform: translateY(0); }
+
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 1rem 2rem; transition: all 0.4s ease;
+      background: transparent; border-bottom: 1px solid transparent;
+    }
+
+    .nav.scrolled {
+      background: rgba(7, 7, 13, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+
+    .nav-logo {
+      font-size: 1.5rem; font-weight: 900;
+      background: linear-gradient(135deg, var(--accent), #ec4899);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      letter-spacing: -0.03em;
+    }
+
+    .nav-links { display: flex; gap: 2rem; }
+
+    .nav-link {
+      font-size: 0.85rem; font-weight: 500; color: var(--text-muted);
+      transition: color 0.3s ease; position: relative; padding: 0.25rem 0;
+    }
+
+    .nav-link::after {
+      content: ''; position: absolute; bottom: -2px; left: 0;
+      width: 0; height: 1.5px; background: var(--accent);
+      transition: width 0.3s ease; border-radius: 2px;
+    }
+
+    .nav-link:hover { color: var(--text); }
+    .nav-link:hover::after { width: 100%; }
+
+    .hero {
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 8rem 2rem 4rem; text-align: center; position: relative; overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 400px 400px at 30% 40%, rgba(99, 102, 241, 0.04) 0%, transparent 100%),
+                  radial-gradient(ellipse 400px 400px at 70% 60%, rgba(236, 72, 153, 0.03) 0%, transparent 100%);
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.4rem 1.1rem; border-radius: 100px;
+      font-size: 0.78rem; font-weight: 500;
+      color: #4ade80; background: rgba(74, 222, 128, 0.06);
+      border: 1px solid rgba(74, 222, 128, 0.12); margin-bottom: 2rem; position: relative; z-index: 2;
+    }
+
+    .badge-dot {
+      width: 6px; height: 6px; border-radius: 50%; background: #4ade80;
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4); }
+      50% { opacity: 0.5; box-shadow: 0 0 0 6px rgba(74, 222, 128, 0); }
+    }
+
+    .hero-title { position: relative; z-index: 2; }
+
+    .hero-greeting {
+      display: block; font-size: clamp(1rem, 2vw, 1.2rem);
+      font-weight: 400; color: var(--text-muted); margin-bottom: 0.3rem;
+    }
+
+    .hero-name {
+      font-size: clamp(4rem, 15vw, 10rem); font-weight: 900;
+      letter-spacing: -0.06em; line-height: 1;
+      background: linear-gradient(135deg, #e8e8ff 0%, #818cf8 30%, #6366f1 60%, #ec4899 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      background-size: 200% 200%; animation: gradientShift 6s ease-in-out infinite;
+    }
+
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .hero-subtitle-wrap {
+      display: flex; align-items: center; justify-content: center;
+      gap: 0; margin-top: 0.75rem; position: relative; z-index: 2; height: 2rem;
+    }
+
+    .hero-subtitle-static, .hero-subtitle, .hero-cursor {
+      font-size: clamp(1rem, 2.5vw, 1.35rem);
+      font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase;
+    }
+
+    .hero-subtitle-static { color: var(--text-muted); }
+    .hero-subtitle { color: #ec4899; }
+    .hero-cursor { color: #ec4899; font-weight: 300; animation: blink 1s step-end infinite; margin-left: 2px; }
+
+    @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+
+    .hero-desc {
+      margin-top: 1rem; font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+      color: var(--text-muted); max-width: 480px; line-height: 1.7; position: relative; z-index: 2;
+    }
+
+    .hero-actions { display: flex; gap: 1rem; margin-top: 2.5rem; position: relative; z-index: 2; }
+
+    .btn {
+      position: relative; display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.8rem 1.8rem; border-radius: var(--radius);
+      font-size: 0.9rem; font-weight: 600;
+      transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1); cursor: pointer; overflow: hidden;
+    }
+
+    .btn-projects {
+      background: rgba(99, 102, 241, 0.06); color: #a5b4fc;
+      border: 1px solid rgba(99, 102, 241, 0.2); backdrop-filter: blur(4px);
+    }
+
+    .btn-projects:hover {
+      background: rgba(99, 102, 241, 0.12);
+      border-color: rgba(99, 102, 241, 0.4);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(99, 102, 241, 0.15);
+    }
+
+    .btn-projects svg { transition: transform 0.3s ease; }
+    .btn-projects:hover svg { transform: translateX(3px); }
+
+    .btn-order {
+      background: transparent; color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.3);
+      position: relative; overflow: hidden;
+    }
+
+    .btn-order::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(74, 222, 128, 0.08), transparent);
+      opacity: 0; transition: opacity 0.3s ease;
+    }
+
+    .btn-order:hover {
+      border-color: #4ade80;
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 0 20px rgba(74, 222, 128, 0.15), 0 8px 30px rgba(74, 222, 128, 0.1);
+    }
+
+    .btn-order:hover::before { opacity: 1; }
+
+    .btn-order svg { color: #4ade80; transition: transform 0.3s ease; }
+    .btn-order:hover svg { transform: translateX(4px) rotate(-10deg); }
+
+    .btn-secondary {
+      background: transparent; color: var(--text); border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      background: var(--surface-hover); border-color: rgba(99, 102, 241, 0.3);
+      transform: translateY(-3px);
+    }
+
+    .btn svg { transition: transform 0.3s ease; }
+    .btn:hover svg { transform: translateX(3px); }
+
+    .hero-scroll {
+      position: absolute; bottom: 2.5rem; color: var(--text-muted);
+      animation: bob 2.5s ease-in-out infinite; z-index: 2;
+    }
+
+    .scroll-dot { animation: scrollDot 2.5s ease-in-out infinite; }
+
+    @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+    @keyframes scrollDot { 0%, 100% { transform: translateY(0); opacity: 1; } 50% { transform: translateY(6px); opacity: 0.3; } }
+
+    .about { padding: 6rem 2rem; max-width: 1100px; margin: 0 auto; position: relative; }
+
+    .section-header { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 3rem; }
+
+    .section-number {
+      font-size: 0.78rem; font-weight: 600; color: var(--accent);
+      letter-spacing: 0.1em; font-variant-numeric: tabular-nums;
+    }
+
+    .section-title { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; letter-spacing: -0.03em; }
+
+    .about-content { max-width: 720px; position: relative; z-index: 2; }
+
+    .about-text p {
+      font-size: 1.05rem; color: var(--text-muted); margin-bottom: 1.2rem; line-height: 1.8;
+    }
+
+    .about-text strong { color: var(--text); }
+
+    .about-energy {
+      display: flex; gap: 0.75rem; margin-top: 2rem; flex-wrap: wrap;
+    }
+
+    .energy-item {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.5rem 1rem; border-radius: 100px;
+      font-size: 0.82rem; font-weight: 500; color: var(--text-muted);
+      background: var(--surface); border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .energy-item svg { color: var(--accent); }
+    .energy-item:hover { border-color: rgba(99, 102, 241, 0.3); transform: translateY(-2px); }
+
+    .about-decoration { position: absolute; bottom: 2rem; left: 0; right: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+
+    .about-marquee {
+      display: flex; gap: 0; white-space: nowrap;
+      animation: marquee 20s linear infinite;
+      font-size: 5rem; font-weight: 900;
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.04), rgba(236, 72, 153, 0.04));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      letter-spacing: 0.05em; user-select: none;
+    }
+
+    @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    .skills { padding: 6rem 2rem; max-width: 900px; margin: 0 auto; }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .skill-cat {
+      background: var(--surface);
+      border-radius: 14px;
+      padding: 1.1rem 1.25rem;
+      border: 1px solid var(--border);
+      transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .skill-cat::before {
+      content: ''; position: absolute; left: 0; top: 0;
+      width: 3px; height: 100%;
+      background: var(--accent-cat, var(--accent));
+      opacity: 0.3;
+    }
+
+    .skill-cat:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent-cat, var(--accent));
+      box-shadow: 0 6px 24px color-mix(in srgb, var(--accent-cat, var(--accent)) 12%, transparent);
+    }
+
+    .skill-cat:hover::before { opacity: 0.7; }
+
+    .skill-cat-header {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .skill-cat-icon {
+      width: 28px; height: 28px; border-radius: 8px;
+      background: color-mix(in srgb, var(--accent-cat, var(--accent)) 10%, transparent);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--accent-cat, var(--accent)); flex-shrink: 0;
+    }
+
+    .skill-cat-icon svg { width: 16px; height: 16px; }
+
+    .skill-cat h3 {
+      font-size: 0.82rem; font-weight: 700; color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+
+    .skill-tag {
+      padding: 0.2rem 0.6rem; border-radius: 100px; font-size: 0.72rem; font-weight: 500;
+      background: color-mix(in srgb, var(--accent-cat, var(--accent)) 7%, transparent);
+      color: color-mix(in srgb, var(--accent-cat, var(--accent)) 70%, #fff);
+      border: 1px solid color-mix(in srgb, var(--accent-cat, var(--accent)) 10%, transparent);
+      transition: all 0.3s ease;
+    }
+
+    .skill-cat:hover .skill-tag {
+      background: color-mix(in srgb, var(--accent-cat, var(--accent)) 14%, transparent);
+      border-color: color-mix(in srgb, var(--accent-cat, var(--accent)) 22%, transparent);
+    }
+
+    .skill-bar {
+      margin-top: 0.75rem;
+      height: 3px;
+      background: color-mix(in srgb, var(--accent-cat, var(--accent)) 8%, transparent);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .skill-bar-fill {
+      height: 100%; border-radius: 4px;
+      background: linear-gradient(90deg, var(--accent-cat, var(--accent)), color-mix(in srgb, var(--accent-cat, var(--accent)) 50%, #fff));
+      width: 0; transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .skill-cat.revealed .skill-bar-fill { width: var(--w); }
+
+    .skill-cat.nobar { padding-bottom: 1.1rem; }
+    .skill-cat.nobar .skill-bar { display: none; }
+
+    .projects { padding: 6rem 2rem; max-width: 1100px; margin: 0 auto; }
+
+    .projects-subtitle {
+      font-size: 0.95rem; color: var(--text-muted); margin-bottom: 2.5rem; margin-top: -1.5rem;
+      font-style: italic;
+    }
+
+    .projects-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 1.5rem; align-items: stretch; }
+
+    .project-card {
+      background: var(--surface); border-radius: var(--radius-lg); padding: 1.75rem;
+      border: 1px solid var(--border);
+      transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+      position: relative; overflow: hidden;
+    }
+
+    .project-card-glow {
+      position: absolute; top: 50%; left: 50%; width: 200px; height: 200px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.06), transparent 70%);
+      transform: translate(-50%, -50%); opacity: 0;
+      transition: opacity 0.5s ease; pointer-events: none;
+    }
+
+    .project-card:hover .project-card-glow { opacity: 1; }
+
+    .project-card-main {
+      border-color: rgba(99, 102, 241, 0.15);
+    }
+
+    .project-card-main:hover {
+      border-color: rgba(99, 102, 241, 0.4);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-card-soon {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; border-style: dashed; border-color: rgba(255, 255, 255, 0.06);
+      background: rgba(15, 15, 24, 0.5);
+    }
+
+    .project-card-soon:hover {
+      border-color: rgba(99, 102, 241, 0.2);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-status {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      padding: 0.25rem 0.75rem; border-radius: 100px;
+      font-size: 0.7rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;
+      color: #4ade80; background: rgba(74, 222, 128, 0.08);
+      border: 1px solid rgba(74, 222, 128, 0.15); margin-bottom: 1rem;
+    }
+
+    .status-dot { width: 5px; height: 5px; border-radius: 50%; background: #4ade80; animation: pulse-dot 2s ease-in-out infinite; }
+
+    .project-card-title {
+      font-size: 1.05rem; font-weight: 700; color: var(--text);
+      margin-bottom: 0.5rem; letter-spacing: -0.02em;
+    }
+
+    .project-card-desc {
+      font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+
+    .project-card-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+    .project-tag {
+      padding: 0.25rem 0.65rem; border-radius: 100px; font-size: 0.72rem; font-weight: 500;
+      background: rgba(99, 102, 241, 0.06); color: #a5b4fc;
+      border: 1px solid rgba(99, 102, 241, 0.1);
+    }
+
+    .project-soon-icon {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: rgba(99, 102, 241, 0.08); display: flex; align-items: center; justify-content: center;
+      color: var(--accent); margin-bottom: 1rem;
+    }
+
+    .project-soon-icon svg { animation: spin 4s linear infinite; }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+
+    .contact { padding: 6rem 2rem; max-width: 1100px; margin: 0 auto; }
+
+    .contact-content {
+      text-align: center; padding: 4rem 3rem;
+      background: var(--surface); border-radius: var(--radius-lg);
+      border: 1px solid var(--border); position: relative; overflow: hidden;
+    }
+
+    .contact-glow {
+      position: absolute; top: -50%; left: 50%; width: 300px; height: 300px;
+      transform: translate(-50%, 0);
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.06), transparent 70%);
+      pointer-events: none;
+    }
+
+    .contact-text { font-size: 1.5rem; font-weight: 700; color: var(--text); position: relative; z-index: 1; }
+    .contact-subtext { font-size: 1rem; color: var(--text-muted); margin-top: 0.5rem; margin-bottom: 2.5rem; position: relative; z-index: 1; }
+
+    .contact-links { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 1; }
+
+    .contact-link {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      padding: 0.75rem 1.75rem; border-radius: var(--radius);
+      font-size: 0.9rem; font-weight: 500;
+      background: var(--accent-soft); border: 1px solid rgba(99, 102, 241, 0.12);
+      color: var(--text); transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .contact-link svg { color: var(--accent); }
+
+    .contact-link:hover {
+      background: rgba(99, 102, 241, 0.15); border-color: rgba(99, 102, 241, 0.3);
+      transform: translateY(-3px); box-shadow: 0 8px 25px rgba(99, 102, 241, 0.15);
+    }
+
+    .footer { padding: 2rem; border-top: 1px solid var(--border); }
+
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+
+    .footer p { font-size: 0.8rem; color: var(--text-muted); }
+
+    .footer-tag { display: flex; align-items: center; gap: 0.5rem; font-size: 0.78rem; color: #ec4899; }
+    .footer-dot { width: 5px; height: 5px; border-radius: 50%; background: #ec4899; animation: pulse-dot 2s ease-in-out infinite; }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hero { padding: 6rem 1.5rem 3rem; }
+      .hero-actions { flex-direction: column; width: 100%; max-width: 300px; }
+      .btn { justify-content: center; width: 100%; }
+      .skills-grid { grid-template-columns: repeat(2, 1fr); }
+      .projects-grid { grid-template-columns: 1fr; }
+      .contact-content { padding: 2.5rem 1.5rem; }
+      .contact-links { flex-direction: column; align-items: center; }
+      .contact-link { width: 100%; justify-content: center; }
+      .footer-inner { flex-direction: column; gap: 0.5rem; }
+    }
+
+    @media (max-width: 540px) {
+      .skills-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      [data-reveal] { opacity: 1; transform: none; transition: none; }
+      html { scroll-behavior: auto; }
+      #particles, .hero-scroll, .gradient-orb { display: none; }
+      .about-marquee { animation: none; }
+      .hero-name, .scroll-progress { animation: none; }
+    }
+  </style>
+
+  <script defer>
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let animId;
+    const COUNT = 20;
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    function createParticle() {
+      return {
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.15,
+        vy: (Math.random() - 0.5) * 0.15,
+        r: Math.random() * 1.2 + 0.3,
+        alpha: Math.random() * 0.25 + 0.05,
+      };
+    }
+
+    function initParticles() {
+      particles = Array.from({ length: COUNT }, () => createParticle());
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (const p of particles) {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0) p.x = canvas.width;
+        if (p.x > canvas.width) p.x = 0;
+        if (p.y < 0) p.y = canvas.height;
+        if (p.y > canvas.height) p.y = 0;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(99, 102, 241, ' + p.alpha + ')';
+        ctx.fill();
+      }
+      animId = requestAnimationFrame(draw);
+    }
+
+    resize();
+    initParticles();
+    draw();
+    window.addEventListener('resize', () => { resize(); initParticles(); });
+
+  </script>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    const nav = document.getElementById('nav');
+    const scrollProgress = document.querySelector('.scroll-progress');
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      nav.classList.toggle('scrolled', scrollTop > 50);
+      scrollProgress.style.width = scrollPercent + '%';
+    });
+
+    const typeTexts = ['Чиловый', 'Krutoi123', 'Линуксоид', 'Рандомны чел', 'Ганчик'];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typedEl = document.getElementById('typed');
+
+    function typeEffect() {
+      const current = typeTexts[textIndex];
+      if (isDeleting) {
+        typedEl.textContent = current.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typedEl.textContent = current.substring(0, charIndex + 1);
+        charIndex++;
+      }
+      if (!isDeleting && charIndex === current.length) {
+        setTimeout(() => { isDeleting = true; }, 2000);
+        setTimeout(typeEffect, 2100);
+        return;
+      }
+      if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % typeTexts.length;
+        setTimeout(typeEffect, 500);
+        return;
+      }
+      setTimeout(typeEffect, isDeleting ? 40 : 80);
+    }
+
+    setTimeout(typeEffect, 1500);
+
+    document.querySelectorAll('.skill-cat').forEach(cat => {
+      const barObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            barObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+      barObserver.observe(cat);
+    });
+  </script>
+</body>
+</html>
